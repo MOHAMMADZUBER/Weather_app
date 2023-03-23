@@ -1,0 +1,183 @@
+* {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 61vh;
+}
+
+.form {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.input {
+  width: 60%;
+  border: none;
+  outline: none;
+  height: 48px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(rgb(55, 55, 230) 0%, rgb(81, 81, 236) 100%);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.icon {
+  padding: 0px;
+}
+
+.weather_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -10px;
+}
+
+.weather_title h1 {
+  text-transform: uppercase;
+}
+.weather_title h3,
+p,
+li {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+
+.weather_status ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.weather_status li span {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    width: 90%;
+    flex-direction: column;
+  }
+  .input {
+    width: 350px;
+  }
+  .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  .container {
+    height: 90vh;
+    flex-direction: row;
+  }
+}
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color */
+body {
+  background-color: #f9f9f9;
+}
+
+/* Style the weather details container */
+.weather-details {
+  max-width: 740px;
+  /* margin: 50px auto; */
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+}
+
+/* Style the weather header */
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style the weather location */
+.weather-location h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Style the weather icon */
+.weather-icon img {
+  width: 100px;
+}
+
+/* Style the weather info */
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the temperature section */
+.temperature {
+  text-align: center;
+}
+
+.temperature h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.temperature p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* Style the weather details section */
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+}
+
+.detail img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.detail p {
+  font-size: 1.5rem;
+  color: #666;
+}
